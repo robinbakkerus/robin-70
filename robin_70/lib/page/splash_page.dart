@@ -17,7 +17,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     _context = context;
-    startTimer(3);
+    startTimer(4);
     return const Scaffold(
       body: Center(
           child: Image(

@@ -5,8 +5,9 @@ import 'package:robin_70/widget/widget_helper.dart';
 
 class DetailPage extends StatefulWidget {
   final String htmlText;
+  final Color color;
 
-  const DetailPage({super.key, required this.htmlText});
+  const DetailPage({super.key, required this.htmlText, required this.color});
 
   @override
   State<DetailPage> createState() => _DetailPageState();
@@ -35,7 +36,7 @@ class _DetailPageState extends State<DetailPage> {
     return Container(
       color: Colors.white,
       padding: const EdgeInsets.all(16.0),
-      child: Stack(alignment: Alignment.center, children: [
+      child: Stack(alignment: Alignment.topCenter, children: [
         _background(context),
         _goBackButton(context),
       ]),
@@ -46,10 +47,6 @@ class _DetailPageState extends State<DetailPage> {
     HtmlWidget htmlWidget = HtmlWidget(
       widget.htmlText,
       customStylesBuilder: (element) {
-        if (element.localName == 'li') {
-          return {'color': 'blue', 'font-size': '2.5em'};
-        }
-
         return null;
       },
     );
@@ -57,6 +54,6 @@ class _DetailPageState extends State<DetailPage> {
   }
 
   Widget _goBackButton(BuildContext context) {
-    return WH.backButton();
+    return WH.backButton(widget.color);
   }
 }

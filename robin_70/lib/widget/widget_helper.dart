@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:robin_70/app.dart';
 
 class WH {
-  static Widget backButton() {
+  static Widget backButton(Color color) {
     return Positioned(
         bottom: 10, //App.screenHeight * 0.2,
         left: App.screenWidth * 0.4,
@@ -14,7 +14,7 @@ class WH {
               onPressed: _onBackButonClicked,
               icon: const Icon(Icons.undo_outlined),
               style: ElevatedButton.styleFrom(
-                  side: const BorderSide(color: Colors.blue, width: 10),
+                  side: BorderSide(color: color, width: 10),
                   shape: const StadiumBorder(),
                   padding: const EdgeInsets.all(4)),
             )
