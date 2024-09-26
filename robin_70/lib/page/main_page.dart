@@ -3,6 +3,7 @@ import 'package:robin_70/app.dart';
 import 'package:robin_70/data/html_content.dart';
 import 'package:robin_70/widget/detail_page.dart';
 import 'package:robin_70/widget/detail_button.dart';
+import 'package:text_scroll/text_scroll.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -28,6 +29,7 @@ class _MainPageState extends State<MainPage> {
       _info(context),
       _parkeren(context),
       _kado(context),
+      _banner(),
     ]);
   }
 
@@ -37,7 +39,7 @@ class _MainPageState extends State<MainPage> {
         height: App.screenHeight,
         child: const Image(
             opacity: AlwaysStoppedAnimation(.3),
-            image: AssetImage("assets/Robin70.png"),
+            image: AssetImage("assets/poster.jpg"),
             fit: BoxFit.scaleDown));
   }
 
@@ -45,8 +47,8 @@ class _MainPageState extends State<MainPage> {
   Widget _info(BuildContext context) {
     return HoverButton(
         key: UniqueKey(),
-        top: App.screenHeight * 0.08,
-        left: App.screenWidth * 0.4,
+        top: App.screenHeight * 0.02,
+        left: App.screenWidth * 0.35,
         image: "assets/info.png",
         targetWidget:
             DetailPage(htmlText: htmlContent.info(), color: Colors.red),
@@ -60,8 +62,8 @@ class _MainPageState extends State<MainPage> {
   Widget _kado(BuildContext context) {
     return HoverButton(
         key: UniqueKey(),
-        top: App.screenHeight * 0.4,
-        left: App.screenWidth * 0.4,
+        top: App.screenHeight * 0.35,
+        left: App.screenWidth * 0.35,
         image: "assets/kado-tip.jpg",
         targetWidget:
             DetailPage(htmlText: htmlContent.gift(), color: Colors.green),
@@ -74,8 +76,8 @@ class _MainPageState extends State<MainPage> {
   Widget _parkeren(BuildContext context) {
     return HoverButton(
         key: UniqueKey(),
-        top: App.screenHeight * 0.7,
-        left: App.screenWidth * 0.4,
+        top: App.screenHeight * 0.65,
+        left: App.screenWidth * 0.35,
         image: "assets/parkeren.jpg",
         targetWidget: DetailPage(
           htmlText: htmlContent.parking(),
@@ -86,6 +88,27 @@ class _MainPageState extends State<MainPage> {
         toolTip: 'Parkeren');
   }
 
+  Widget _banner() {
+    return Positioned(
+      bottom: 0,
+      left: App.screenWidth * 0.1,
+      child: Container(
+        color: const Color.fromARGB(255, 236, 232, 193),
+        width: App.screenWidth * 0.9,
+        // height: 200,
+        child: TextScroll(
+            style: const TextStyle(fontSize: 32),
+            _bannerText,
+            textDirection: TextDirection.ltr,
+            velocity: const Velocity(
+              pixelsPerSecond: Offset(150, 0),
+            )),
+      ),
+    );
+  }
+
+  final String _bannerText =
+      'Zaterdag 9 november, vanaf 16.00 uur is het Party time! met een Pasta party en Silent disco marathon in de RGB discobar. Klik op de buttons voor meer info ... ';
   // //----------------------------------------------
 
   // Widget _hotel(BuildContext context) {

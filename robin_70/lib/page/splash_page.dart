@@ -21,7 +21,7 @@ class _SplashPageState extends State<SplashPage> {
     return const Scaffold(
       body: Center(
           child: Image(
-              image: AssetImage("assets/Robin70.png"), fit: BoxFit.scaleDown)),
+              image: AssetImage("assets/poster.gif"), fit: BoxFit.scaleDown)),
     );
   }
 
