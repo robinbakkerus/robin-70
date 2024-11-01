@@ -47,9 +47,9 @@ In plaats van een kado vraag ik een donatie voor Alpe du Zes.<br><br>
 <br><br>
 
 In 2013 heb ik samen met Rene en Niels meegedaan aan de Alpe du Zes, en ben toen 5 keer omhoog gefiets.<br>
-In 2025 wil ik nog &egrave;&egrave;n keer meedoen, en dan is maar &egrave;&egrave;n keer omhoog fietsen ook prima.
-<br>
-Binnenkort hoop ik op deze <a href="https://www.opgevenisgeenoptie.nl/donatie">website</a> mijn donatie pagina te openen.
+In 2025 wil ik nog &egrave;&egrave;n keer meedoen, en dan probeer ik &egrave;&egrave;n keer omhoog te fietsen en daarna samen met Paula omhoog wandelen.
+<br><br>
+Hier is mijn <a href="https://www.opgevenisgeenoptie.nl/fundraisers/robinbakkerus/alpe-dhuzes">sponsor pagina</a>
 
 </body>
 """;
@@ -73,21 +73,18 @@ Binnenkort hoop ik op deze <a href="https://www.opgevenisgeenoptie.nl/donatie">w
 PSV speelt dat weekend uit. De Glow bezoekers komen pas later en het winkelpubliek gaat dan weer naar huis, 
 dus het zou rond 16:00 uur niet zo moeilijk moeten zijn om in de buurt te parkeren.<br>
 Als je een stuk moet wandelen is ook niet erg: vanwege het Glow festival is dat erg sfeervol zie:
-<a href="https://gloweindhoven.nl/"> Glow</a>
+<a href="https://gloweindhoven.nl/praktisch/"> Glow</a>
 <br><br>
-<a href="https://www.prettigparkeren.nl/kaart/#!Eindhoven/">Overzicht alle parkeerplakken</a>
-<br><br>
+
 <h2>Geadviseerde parkeerplekken</h2>
 <ul>
+<li>TU Terrein, makkelijk bereikbaar goedkoop en langs de Glowroute (20 min)</li>
+<li>Parking Philips stadion, grote parkeergarage goedkoop (25 min)</li>
 <li>Q-Park Heuvel, grote parkeergarage in het centrum (3 min)</li>
 <li>Q-Park Stadhuisplein, grote parkeergarage in het centrum (3 min)</li>
-<li>Parking Philips stadion, grote parkeergarage goedkoop (25 min)</li>
-<li>Ekoplaza Stratumsedijk Stratumsedijk 34, gratis (13 min)</li>
-<li>Parkeerplaats Praxis, gratis (16 min)</li>
+
 </ul>
 
-
- 
 
 </body>
 """;
